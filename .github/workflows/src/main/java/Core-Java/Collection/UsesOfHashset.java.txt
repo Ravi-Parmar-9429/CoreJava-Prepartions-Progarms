@@ -1,0 +1,20 @@
+import java.util.*;
+class UsesOfHashset{
+    //dup objects are not allowed
+    //insertion order is not preserved
+    //Same type of objects , diff type of objects also allowed
+    //Null insertion is allowed once
+    
+    public static void main(String args[]){
+       HashSet<Integer> hashset = new HashSet();   
+       hashset.add(10);
+       hashset.add(20);
+       hashset.add(30);
+       hashset.add(10);
+     
+       
+       System.out.println(hashset.contains(10));//search..
+       System.out.println(hashset.remove(10));//removing..
+       System.out.println(hashset);//order is not preserved
+    }
+}
